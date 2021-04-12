@@ -1,0 +1,93 @@
+.parallax{
+    background-image: url(https://res.cloudinary.com/doem0ysxl/image/upload/v1611851620/BaristaCoffee/backgrounds/home-parallax_qwlb7q.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    margin: 50px 0;
+    min-height: 600px;
+    position: relative;
+
+    svg.parallax--top{
+        
+        position: absolute;
+        bottom: 0;
+    }
+
+    svg.parallax--bottom{
+        position: absolute;
+        transform: rotateX(180deg);
+    }
+
+    .parallax__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+    
+    .parallax--left{
+        flex: 1;
+        padding-left: 40px;
+    }
+
+    .parallax--right{
+        color: #fff;
+        padding: 0 60px;
+        flex: 1;
+        
+        .parallax--title{
+            font-family: Merriweather,serif;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 27px;
+        }
+
+        h2{
+            color: #fff;
+            position: relative;
+            margin-bottom: 50px;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 120px;
+                height: 3px;
+                background-color: #fff;
+                position: absolute;
+                left: 0;
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .parallax{
+        min-height: 600px;
+        .parallax__content{
+            display: block;
+            padding: 40px 15px;
+
+            
+        }
+    
+        .parallax--left{
+            display: none;
+        }
+    
+        .parallax--right{
+            padding: 0;
+
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+    
+}

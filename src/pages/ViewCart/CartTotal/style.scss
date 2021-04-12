@@ -1,0 +1,23 @@
+.cart__total{
+    margin-top: 30px;
+
+    .cart__total--content{
+        margin-top: 15px;
+        border: 1px solid #efefef;
+        padding: 16px 20px;
+
+        .cart__total--box{
+            h4{
+                display: inline;
+                margin-right: 10px;
+            }
+
+            span{
+                font-size: 18px;
+                font-family: Merriweather,serif;
+                font-weight: 400;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.signup-page{
+    .signup--left, .signup--right{
+        flex: 1;
+        align-self: flex-start;
+    }
+
+    .signup--right{
+        text-align: right;
+    }
+
+    .signup--left{
+        overflow: hidden;
+        .slide-form{
+            display: block;
+            white-space: nowrap;
+            .form-box{
+                display: inline-block;
+                width: 100%;
+                transition: all .5s ease-in-out;
+                vertical-align: text-top;
+            }
+
+            &.open-submit-code{
+                .form-box:first-child{
+                    margin-left: -100%;
+                }
+            }
+
+            p{
+                white-space: normal;
+            }
+        }
+
+        .barista-read-more.before{
+            padding-left: 25px;
+            span{
+                left: 0;
+                right: inherit;
+                
+            }
+            
+        }
+    }
+
+    img{
+        width: 80%;
+        height: auto;
+    }
+
+    .form-signup{
+        .form-group{
+            margin-bottom: 20px;
+        }
+    }
+}

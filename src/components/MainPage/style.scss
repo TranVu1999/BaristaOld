@@ -1,0 +1,14 @@
+.main-page{
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &__breadcrumb{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    &__content{
+        width: 75%;
+        padding-right: 15px;
+    }
+}

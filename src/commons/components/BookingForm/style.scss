@@ -1,0 +1,72 @@
+@import './../../../assets//Sass/variable.scss';
+
+form.form-book-table{
+    font-family: 'Merriweather',serif;
+
+    .form-group{
+        display: flex;
+        input{
+            flex: 1;
+            margin-right: 1px;
+        }
+    }
+
+    input{
+        padding: 18px 15px;
+        font-style: italic;
+        color: $main-color;
+        font-weight: 600;
+
+        box-sizing: border-box;
+        background-color: #fff;
+        height: 50px;
+
+        &::placeholder{
+            color: $main-color;
+        }
+    }
+
+    
+
+    span.form-book-table--icon{
+        background-color: #fff;
+        display: inline-block;
+        line-height: 44px;
+
+        font-size: 22px;
+        color: $primary-color;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+
+
+    }
+
+    span.form-book-table--label{
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    form.form-book-table{
+        &>div{
+            display: block;
+        }
+
+        span.form-book-table--label{
+            display: block;
+            margin: 5px 0;
+        }
+
+        .barista-btn{
+            margin-top: 15px;
+        }
+
+        
+    }
+}

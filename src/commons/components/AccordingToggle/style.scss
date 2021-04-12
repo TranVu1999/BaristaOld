@@ -1,0 +1,59 @@
+@import './../../../assets/Sass/variable.scss';
+
+.accordition-toggle{
+    margin-bottom: 40px;
+    .accordition-span{
+        padding: 8px 40px;
+        line-height: 50px;
+        color: #000;
+        font-size: 18px;
+
+        font-weight: 600;
+        font-family: Merriweather,serif;
+        font-style: italic;
+        border: 1px solid #efefef;
+
+        margin-bottom: 25px;
+
+        label{
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+
+    .accordition-toggle--box{
+        min-height: 68px;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    &>input[type=checkbox]{
+        display: none;
+    }
+
+    &>input[type=checkbox]:checked~.accordition-toggle--box{
+        max-height: 500px;
+    }
+
+    .form-group{
+        margin: 15px 0;
+    }  
+    
+    .accordition--right{
+        color: $primary-color;
+    }
+
+    .accordition-toggle--box.empty-icon{
+        max-height: 500px;
+        text-align: center;
+        img{
+            margin-top: 50px;
+            width: 150px;
+        }
+
+        .barista-btn{
+            font-style: initial;
+        }
+        
+    }
+}

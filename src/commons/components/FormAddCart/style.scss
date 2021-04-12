@@ -1,0 +1,55 @@
+@import './../../../assets/Sass/variable.scss';
+
+.product-add-cart{
+    justify-content: flex-start;
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 35px;
+    .form-group--amount{
+        input{
+            height: 50px;
+            width: 50px;
+            padding: 0;
+            background-color: #eae7de;
+
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            line-height: 50px;
+            font-weight: 600;
+        }
+
+        span{
+            line-height: 25px;
+            font-size: 18px;
+        }
+
+        .btn-increase{
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+        .btn-decrease{
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-right: 12px;
+        }
+
+        button:hover{
+            color: $primary-color;
+        }
+
+    }
+
+    .coffee-btn{
+        height: 50px;
+        line-height: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        background-color: $primary-color;
+        &:hover{
+            background-color: $main-color;
+        }
+    }
+
+
+}

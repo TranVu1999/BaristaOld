@@ -1,0 +1,17 @@
+.sidebar--widget{
+    margin-bottom: 50px;
+
+    h4{
+        margin-bottom: 35px;
+        
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+
+            background-color: #eae7de;
+            margin-top: 6px;
+        }
+    }
+}

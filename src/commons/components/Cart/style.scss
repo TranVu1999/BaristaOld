@@ -1,0 +1,194 @@
+@import './../../../assets//Sass/variable.scss';
+
+.cart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: transparent;
+    z-index: 100;
+    transform: translateX(100%);
+    display: none;
+    transition: transform .2s ease-in-out .2s, background-color .3s linear .2s;
+
+    &.open{
+        display: block;
+        transform: translateX(0);
+        background-color: rgba(0,0,0,.5);
+    }
+
+    .cart-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 100vh;
+
+        background-color: #fff;
+        padding: 30px 10px 30px 30px;
+        transform: translateX(100%);
+    }
+
+    &.open{
+        .cart-container{
+            animation: animateOpenCart .3s ease-in-out .3s 1 forwards;
+        }
+    }
+
+    .cart--title{
+        border-bottom: 1px solid #d5d5d5;
+        padding-bottom: 15px;
+        position: relative;
+
+        h2{
+            font-size: 28px;
+        }
+        button{
+            position: absolute;
+            top: 35%;
+            right: 0px;
+            transform: translateY(-50%);
+
+            font-size: 28px;
+
+            &:hover span{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .cart--body{
+        height: 278px;
+        overflow-y: scroll;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $primary-color; 
+            border-radius: 4px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $main-color; 
+        }
+        
+        .cart--item{
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            padding: 15px 0;
+            border-bottom: 1px solid #d5d5d5;
+
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+
+        .product-thumb{
+            width: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .product-text{
+            flex: 1;
+            position: relative;
+
+            button.btn-close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 18px;
+            }
+        }
+
+        .product-price{
+            margin: 8px 0;
+
+            del{
+                margin-right: 14px;
+            }
+        }
+
+        .update-cart{
+            display: inline-block;
+            input{
+                width: 50px;
+                border-top: 1px solid #d5d5d5;
+                border-bottom: 1px solid #d5d5d5;
+                text-align: center;
+                padding: 8px 0;
+            }
+            button{
+                width: 30px;
+                padding: 8px 0;
+                border: 1px solid #d5d5d5;
+
+                &:first-child{
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:last-child{
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .cart--footer{
+        border-top: 1px solid #d5d5d5;
+
+        .sub-total{
+            margin-top: 30px;
+            span{
+                font-size: 20px;
+            }
+
+            b{
+                color: #c7a17a;
+                font-style: italic;
+                font-size: 24px;
+                font-family: Merriweather,serif;
+                font-weight: 400;
+            }
+        }
+
+        .btn-viewcart, .btn-checkout{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+
+        .btn-viewcart{
+            margin-bottom: 8px;
+        }
+
+        .btn-checkout{
+            background-color: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
+
+@keyframes animateOpenCart {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

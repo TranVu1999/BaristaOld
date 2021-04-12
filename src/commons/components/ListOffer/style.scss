@@ -1,0 +1,25 @@
+@import './../../../assets/Sass/variable.scss';
+
+.offer__content{
+    column-gap: 50px;
+    row-gap: 30px;
+    .offer--item{
+        display: flex;
+        align-items: flex-start;
+
+        .offer-img{
+            margin-right: 15px;
+            svg{
+                width: 42px;
+                height: 45px;
+            }
+            
+        }
+
+        .offer-text{
+            h4{
+                margin-top: 10px;
+            }
+        }
+    }
+}

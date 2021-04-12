@@ -1,0 +1,68 @@
+@import './../../../assets/Sass/variable.scss';
+
+.product-tabs{
+    border-bottom: 2px solid #efefef;
+    border-top: 2px solid #efefef;
+    padding: 60px 0 35px;
+    text-align: center;
+
+    .product-nav__item{
+        display: inline-block;
+        padding: 13px 0;
+        font-size: 19px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        border-bottom: 2px solid #efefef;
+        cursor: pointer;
+
+        h4{
+            padding: 0 25px;
+            border-right: 2px solid #efefef;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover,
+        &.active{
+            h4{
+                color: $primary-color;
+            }
+            
+        }
+        
+
+        &:last-child{
+            h4{
+                border: none;
+            }
+        }
+    }
+
+    .product-tab__item{
+        padding: 27px 50px;
+
+        h2{
+           font-size: 18px;
+           margin-bottom: 35px; 
+           letter-spacing: 1px;
+           text-align: left;
+        }
+    }
+
+    table{
+        width: 100%;
+        tbody{
+            tr{
+                border: 1px solid  #efefef;
+            }
+
+            th, td{
+                padding: 16px 7px;
+            }
+
+            th{
+                border-right: 1px solid #efefef;
+            }
+        }
+    }
+}

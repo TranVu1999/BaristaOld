@@ -1,0 +1,60 @@
+@import './../../../assets/Sass/variable.scss';
+
+.search-page{
+    background-color: #fff;
+    padding: 0px 25px;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    right: 0;
+
+    min-height: 0;
+    max-height: 0;
+    transition: all .5s;
+    z-index: 100;
+    overflow: hidden;
+
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.active{
+        max-height: 80px;
+    }
+
+    form.form{
+        width: 75%;
+        input{
+            background-color: #fff;
+            font-family: Merriweather,serif;
+            font-size: 20px;
+            color: #666;
+            display: block;
+
+            font-weight: 700;
+            font-style: italic;
+            padding-left: 0;
+            margin: 11px 0;
+
+            &::placeholder{
+                font-style: italic;
+            }
+
+            &:focus{
+                border-color: transparent;
+            }
+        }
+    }
+
+    button{
+        font-size: 28px;
+        transition: all .3s;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+
+
+}

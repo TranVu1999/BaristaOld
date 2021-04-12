@@ -1,0 +1,39 @@
+@import './../../../../assets/Sass/variable.scss';
+
+.cmt-list{
+    .cmt-item{
+        border-bottom: 2px solid #efefef;
+        padding-bottom: 35px;
+        margin-bottom: 20px;
+    }
+    .cmt-item__content{
+        text-align: left;
+
+        .cmt-item--text{
+            flex: 1;
+        }
+
+        img{
+            margin-right: 24px;
+            border-radius: 50%;
+            width: 83px;
+            height: 83px;
+        }
+
+        .author{
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .time{
+            font-size: 12px;
+            color: $primary-color;
+            font-family: 'Merriweather',serif;
+            font-style: italic;
+        }
+
+        p{
+            margin-top: 10px;
+        }
+    }
+}

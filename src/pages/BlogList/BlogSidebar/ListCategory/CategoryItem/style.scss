@@ -1,0 +1,21 @@
+@import './../../../../../assets/Sass/variable.scss';
+.cat-item{
+    padding: 5px 0;
+    
+    &:first-child{
+        padding-top: 0;
+    }
+
+    a{
+        text-transform: capitalize;
+    }
+    
+    a:hover{
+        color: $primary-color;
+    }
+
+    span{
+        color: $primary-color;
+        margin-right: 14px;
+    }
+}

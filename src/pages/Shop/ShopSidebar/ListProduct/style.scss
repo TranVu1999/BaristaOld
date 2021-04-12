@@ -1,0 +1,34 @@
+@import './../../../../assets/Sass/variable.scss';
+.sidebar--widget{
+    .lst-prod{
+        .prod-item{
+            display: flex;
+            margin-bottom: 15px;
+
+            .prod-thumb{
+                width: 86px;
+                margin-right: 15px;
+            }
+
+            .prod-text{
+                flex: 1;
+            }
+
+            .prod-title{
+                display: block;
+                color: $main-color;
+                text-transform: uppercase;
+                font-family: 'Oswald',sans-serif;
+                line-height: 1;
+            }
+
+            .product-rate{
+                margin: 0;
+            }
+
+            .product-price{
+                font-size: 14px;
+            }
+        }
+    }
+}

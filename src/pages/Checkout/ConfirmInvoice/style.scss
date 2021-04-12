@@ -1,0 +1,54 @@
+@import './../../../assets/Sass/variable.scss';
+
+.confirm-invoice{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h3{
+        margin-bottom: 30px;
+    }
+
+    .detail-invoice{
+        border: 1px solid #efefef;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #efefef;
+    }
+
+    .left, .right{
+        flex: 1;
+        padding: 15px 7px 15px 30px;
+    }
+
+    .left{
+        font-weight: 600;
+        color: $main-color;
+        border-right: 1px solid #efefef;
+    }
+
+    .right{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Merriweather,serif;
+    }
+
+    .detail-invoice__body{
+        .row:last-child{
+            border-bottom: 1px solid #efefef;
+        }
+    }
+
+    .detail-invoice__footer{
+        .row{
+            border: none;
+        }
+
+        .left{
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import './../../../assets/Sass/variable.scss';
+
+.load-box{
+    background-color: #a7956833;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+  
+  .gear {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: spin 5s infinite;
+  }
+  
+  .two {
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    animation: spin-reverse 5s infinite;
+  }
+  
+  .three {
+    top: 45px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  .lil-circle {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px 2px gray, 0 0 50px white;
+    width: 100px;
+    height: 100px;
+    opacity: .65;
+  }
+  
+  .text {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 22px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  
+@keyframes spin {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    50% {
+        transform: rotate(-360deg);
+    }
+}

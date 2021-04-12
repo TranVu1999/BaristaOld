@@ -1,0 +1,25 @@
+@import './../../../assets//Sass/variable.scss';
+
+.booking__content{
+    .booking--right, .booking--left{
+        flex: 1;
+    }
+
+    .booking--left{
+        h2{
+            position: relative;
+            margin-bottom: 40px;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+
+                display: block;
+                width: 120px;
+                height: 2px;
+                background-color: $primary-color;
+            }
+        }
+    }
+}

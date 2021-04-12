@@ -1,0 +1,88 @@
+@import './../../../assets/Sass/variable.scss';
+
+header{
+    .cart--header{
+        position: absolute;
+        top: 200%;
+        right: -50%;
+        width: 350px;
+    
+        background-color: #fff;
+        z-index: 10;
+    
+        .cart__item{
+            margin: 0 15px;
+            padding: 15px 0;
+            border-bottom: 2px solid #efefef;
+            display: flex;
+            position: relative;
+    
+    
+            &:last-child{
+                border: none;
+                
+            }
+            .item--thumbnail{
+                img{
+                    width: 75px;
+                    height: 75px;
+                    object-fit: cover;
+                }
+            }
+    
+            .item--text{
+                padding-left: 15px;
+                a{
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $main-color;
+    
+                    font-family: Oswald,sans-serif;
+                }
+    
+                span{
+                    display: block;
+                    font-size: 12px;
+                    font-family: Merriweather,serif;
+                    color: #666;
+    
+                    margin-bottom: 10px;
+                    font-style: italic;
+                    text-transform: capitalize;
+                    font-weight: 100;
+                }
+    
+                p{
+                    font-size: 18px;
+                    font-family: Merriweather,serif;
+                    font-weight: 400;
+                    margin: 0;
+                    color: $primary-color;
+                }
+            }
+    
+            .item--control{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 18px;
+            }
+        }
+    
+        .cart__control{
+            margin: 30px 15px 30px;
+        }
+    
+        .cart-notify{
+            padding: 15px 0 15px 25px;
+            color: #888;
+            font-family: 'Open Sans',sans-serif;
+            font-size: 14px;
+    
+            line-height: 26px;
+            font-weight: 400;
+            text-transform: initial;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.cart__content{
+    margin-top: 100px;
+    border: 1px solid #efefef;
+
+    .cart-item{
+        display: flex;
+        align-items: center;
+
+        .product-name{
+            flex: 1;
+        }
+
+        .product-quanity{
+            width: 220px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            .product-add-cart{
+                padding-bottom: 0;
+            }
+        }
+
+        .product-price{
+            width: 120px;
+        }
+
+        .product-total{
+            width: 120px;
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+
+    .cart--header{
+        padding: 16px 0;
+
+        .product-name, .product-price, 
+        .product-thumbnail, .product-quanity, 
+        .product-total{
+            font-family: Merriweather,serif;
+            font-style: italic;
+            color: #30271c;
+
+            font-weight: 600;
+            font-size: 16px;
+        }
+           
+        .product-name{
+            padding-left: 15px;
+        }
+
+        .product-thumbnail{
+            padding-left: 18px;
+            width: 100px;
+            font-style: normal;
+        }
+
+    }
+
+    .cart--body{
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+
+        .cart-item{
+            border-bottom: 1px solid #efefef;
+        }
+
+        div[class|="product"]{
+            font-family: Merriweather,serif;
+            font-style: italic;
+            color: #30271c;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .product-thumbnail{
+            width: 100px;
+            font-style: normal!important;
+            border-right: 1px solid #efefef;
+            align-self: stretch;
+            
+
+            button{
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+            }
+        }
+
+        .product-name{
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+
+            .product-image{
+                width: 85px;
+                height: 85px;
+                margin: 0 15px;
+
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }  
+}

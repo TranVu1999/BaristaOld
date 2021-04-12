@@ -1,0 +1,86 @@
+@import './../../../assets/Sass/variable.scss';
+.account__address{
+
+    a:hover{
+        color: $primary-color;
+    }
+    .add-address{
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 8px 0;
+        background-color: #fff;
+        border: 1px dashed rgb(216, 216, 216);
+
+        font-weight: 700;
+        
+        &:hover{
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+        
+        a{
+            display: inline-flex;
+        }
+        
+        .icon_plus{
+            font-size: 28px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.lst-address{
+    .item{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 17px 15px;
+        margin-bottom: 3px;
+    }
+
+    .name{
+        text-transform: uppercase;
+    }
+    
+    .name, .address, .phone, .edit{
+        color: $main-color;
+    }
+
+    .notify{
+        color: rgb(38, 188, 78);
+        text-transform: none;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .edit{
+        text-decoration: underline;
+    }
+
+    .address span, .phone span{
+        color: #666;
+    }
+
+    .respon-info{
+        display: none;
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .lst-address{
+        .item{
+            display: block;
+        }
+
+        .phone, .name, .address span{
+            display: none;
+        }
+
+        .respon-info{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,2 @@
+folder pages dùng để gom quản lý code giữa các trang
+file routes có nhiệm vụ gom code mỗi page. Tổng hợp lại để validate để cho ra một array các routes hợp lệ, sau đó export kết quả ra, việc render và config Route sẽ được thực hiện ở component App.js

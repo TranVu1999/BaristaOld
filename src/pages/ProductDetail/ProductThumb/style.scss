@@ -1,0 +1,14 @@
+.product-detail{
+    .product-images{
+        width: 47%;
+        margin-right: 4%;
+    }
+    .product-thumb{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+       
+}

@@ -1,0 +1,62 @@
+@import './../../../assets/Sass/variable.scss';
+
+.product-summary{
+    width: 49%;
+
+    .product-title{
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-rate__box{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .product-rate--text{
+            color: #666;
+            margin: 0 0 0 15px;
+        }
+    }
+
+    .product-price{
+        margin-top: 20px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .product-meta{
+        font-size: 15px;
+        font-family: 'Oswald',sans-serif;
+        padding: 35px 0;
+        border-bottom: 2px solid #efefef;
+
+        &:last-child{
+            border: none;
+        }
+
+        .product-meta__item{
+            display: table-row;
+        }
+        label{
+            display: table-cell;
+            width: 120px;
+            color: $main-color;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .lst-share-icon{
+            li{
+                display: inline-block;
+                color: #757575;
+                font-size: 14px;
+                margin: 0 8px;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

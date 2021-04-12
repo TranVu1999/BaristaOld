@@ -1,0 +1,61 @@
+@import './../../../assets/Sass/variable.scss';
+
+.review-box{
+    text-align: left;
+
+    h2{
+        margin-bottom: 0!important;
+    }
+
+    .rating-box{
+        margin-top: 10px;
+        .rating-span{
+            color: $primary-color;
+            font-family: Merriweather,serif;
+            font-style: italic;
+            padding-right: 15px;
+        }
+
+        .rating{
+            display: inline-block;
+
+            span{
+                margin: 0 4px;
+                cursor: pointer;
+
+                &.active{
+                    color: #FFC000;
+                }
+            }
+
+        }
+    }
+
+    form.form-comment{
+        textarea{
+            margin-top: 25px;
+
+            width: 100%;
+            border: 2px solid transparent;
+            background-color: #f6f4ef;
+            font-family: Merriweather,serif;
+
+            font-style: italic;
+            font-size: 13px;
+            color: $primary-color;
+            padding: 17px 19px;
+
+            &::placeholder{
+                color: $primary-color;
+            }
+
+            &:focus{
+                border-color: #eae7de;
+            }
+        }
+
+        .coffee-btn{
+            margin-top: 15px;
+        }
+    }
+}

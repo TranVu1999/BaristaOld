@@ -1,0 +1,79 @@
+@import './../../../assets/Sass/variable.scss';
+
+.input-group{
+    input.error{
+        border-color: $primary-color;
+    }
+}
+
+.input-group.relative-notify{
+    position: relative;
+
+    .notify-box{
+        position: absolute;
+        top: 50%;
+        right: 8px;
+
+        transform: translateY(-50%);
+        cursor: pointer;
+
+
+        .notify-icon{
+            color: $primary-color;
+        }
+
+        .notify-content{
+            display: none;
+
+            position: absolute;
+            top: -130%;
+            right: -8px;
+            background-color: #fff;
+
+            border: 1px solid #d5d5d5d5;    
+            box-shadow: 0 0 5px #d5d5d5;
+            border-radius: 4px;
+            padding: 2px 20px;
+
+            z-index: 10;
+            min-width: 180px;
+            white-space: nowrap;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+
+                border: 1px solid #d5d5d5;
+                position: absolute;
+                bottom: -5px;
+                right: 8px;
+
+                transform: rotate(45deg);
+                z-index: 20;
+            }
+
+            &::before{
+                content: '';
+                display: block;
+                height: 10px;
+                width: 15px;
+
+                z-index: 30;
+                position: absolute;
+                bottom: -1px;
+                right: 6px;
+
+                background-color: #fff;
+
+            }
+        }
+
+        &:hover{
+            .notify-content{
+                display: block;
+            }
+        }
+    }
+}

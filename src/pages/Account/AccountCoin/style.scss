@@ -1,0 +1,54 @@
+.account__coin{
+    padding: 50px 20px;
+    
+    .coin-number{
+        text-align: center;
+        span{
+            color: #41d67e;
+            font-weight: 700;
+        }
+
+        span.big{
+            font-size: 36px;
+            margin-left: 15px;
+        }
+    }
+
+    .coin-table{
+        margin-top: 40px;
+        .coin-table-head{
+            font-weight: 600;
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+        .coin-table-row{
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px solid #d5d5d5;
+            
+
+            .coin-coffee{
+                width: 100px;
+            }
+
+            .coin-time{
+                width: 110px;
+            }
+
+            .coin-status{
+                width: 120px;
+                text-align: right;
+            }
+
+            .coin-content{
+                flex: 1;
+            }
+        }
+
+        .coin-table-body{
+            .coin-coffee{
+                color: #41d67e;
+            }
+        }
+    }
+}

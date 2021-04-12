@@ -1,0 +1,15 @@
+@import './../../../../assets/Sass/variable.scss';
+
+.tag{
+    display: inline-block;
+    padding: 4px 14px;
+    background-color: rgb(192, 192, 192);
+    margin-bottom: 8px;
+    margin-right: 3px;
+    border-radius: 4px;
+
+    &:hover{
+        background-color: $primary-color;
+        color: #fff;
+    }
+}

@@ -1,0 +1,23 @@
+.our-services--item{
+    text-align: center;
+    img{
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(3){
+        img{
+            position: relative;
+            transform: translateX(25%);
+        }
+        
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .our-services__content>div{
+        display: block;
+    }
+}

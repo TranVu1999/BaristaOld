@@ -1,0 +1,117 @@
+@import './../../../assets/Sass/variable.scss';
+
+.quickview-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #c7a17a87;
+    z-index: 100;
+    display: none;
+
+    &.open{
+        display: block;
+    }
+
+    .quickview-container{
+        width: 860px;
+        height: 560px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        display: flex;
+        padding: 40px 30px;
+
+        .close-quickview{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            color: #666;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .quickview--left, .quickview--right{
+        flex: 1;
+    }
+
+    .quickview--right{
+        padding-left: 30px;
+
+        .product-title{
+            font-size: 24px;
+        }
+
+        .product-rate{
+            margin-right: 14px;
+        }
+
+        .product-price{
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .product-add-cart{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .read-more{
+            padding-right: 30px;
+        }
+    }
+
+    .quickview__thumb{
+        width: 100%;
+        height: 380px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .quickview__image{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image--item{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            cursor: pointer;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: block;
+                width: 88px;
+                height: 88px;
+                border: 2px solid transparent;
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover::after, &.active::after{
+                border-color: $primary-color;
+            }
+
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}

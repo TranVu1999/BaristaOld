@@ -1,0 +1,59 @@
+@import './../../../assets//Sass//variable.scss';
+
+.our-menu{
+    background-image: url(https://res.cloudinary.com/doem0ysxl/image/upload/v1611851619/BaristaCoffee/backgrounds/our-menu_l9ndkj.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-top: 110px;
+    padding-bottom: 135px;
+    position: relative;
+    
+
+    svg.parallax--top{
+        position: absolute;
+        bottom: 0;
+    }
+
+    svg.parallax--bottom{
+        position: absolute;
+        transform: rotateX(180deg);
+        top: 0;
+    }
+    
+
+    .title-box{
+        h2{
+            color: #fff;
+        }
+    }
+
+    .our-menu--left, .our-menu--right{
+        width: 50%;
+    }
+
+    .our-menu--left{
+        padding-right: 20px;
+    }
+
+    .our-menu--right{
+        padding-left: 20px;
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .our-menu__content{
+        &>div{
+            display: block;
+        }
+
+        .our-menu--left, .our-menu--right{
+            width: 100%;
+            padding: 0;
+        }
+        
+    }
+}

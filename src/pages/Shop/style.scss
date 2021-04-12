@@ -1,0 +1,48 @@
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .shop-page{
+        display: block;
+        position: relative;
+
+        .main-page__sidebar{
+            position: absolute;
+            top: 0;
+            left: 0%;
+
+            min-width: 0;
+            max-width: 0;
+            min-height: 0;
+            max-height: 0;
+
+            overflow: hidden;
+            background-color: green;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .main-page__sidebar.open{
+            left: 0;
+            animation: openSidebar 2.5s 1 linear forwards;
+        }
+    }
+}
+
+@keyframes openSidebar{
+    0%{
+        max-height: 1px;
+    }
+    25%{
+        width: 100%;
+        max-width: 100%;
+        max-height: 1px;
+        
+    }
+    100%{
+        width: 100%;
+        max-width: 100%;
+        max-height: 1500px;
+    }
+}

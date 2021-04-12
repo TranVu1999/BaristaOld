@@ -1,0 +1,132 @@
+.banner__content{
+    padding: 30px 0;
+
+    .banner__item{
+        flex: 1;
+        height: 260px;
+        background-size: cover;
+        background-position: center;
+
+        position: relative;
+        display: block;
+
+        &:first-child{
+            margin-right: 15px;
+        }
+        &:last-child{
+            margin-left: 15px;
+        }
+
+        .banner--overlay{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.2);
+        }
+
+        &:hover .banner--overlay{
+            background-color: rgba(0,0,0,.3);
+        }
+
+        .banner--text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 68%;
+
+            padding: 50px;
+            text-transform: uppercase;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #fff;
+
+            h6{
+                font-size: 45px;
+                line-height: 1.16667;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+
+            button{
+                text-transform: uppercase; 
+                letter-spacing: 1.5px;
+                font-weight: 800;
+                font-size: 12px;
+                color: inherit;
+
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 50%;
+                    right: -28px;
+                    transform: translateY(-50%);
+
+                    transition: all .3s ease-in-out;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover{
+                span{
+                    transform: translateX(5px) translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+.full-banner{
+    height: 625px;
+    background-size: cover;
+    background-position: center 0px;
+    background-attachment: fixed;
+
+    .banner--text{
+
+        h1{
+            color: #fff;
+        }
+        
+    }
+    
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+
+    .banner{
+        .cf-container{
+            width: 100%;
+        }
+    }
+    .banner__content{
+        display: block;
+
+        .banner__item{
+            margin-bottom: 5px;
+
+            &:first-child{
+                margin-right: 0;
+            }
+
+            &:last-child{
+                margin-left: 0;
+            }
+
+            .banner--text{
+                width: 100%;
+                padding: 50px 15px;
+
+                h6{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

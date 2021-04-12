@@ -1,0 +1,44 @@
+@import './../../assets/Sass/variable.scss';
+
+.lst-invoice{
+    background-color: #fff;
+    line-height: 1.2;
+    width: 100%;
+
+    .lst-invoice--body{
+        display: table-row-group;
+    }
+
+    .lst-invoice--header{
+        div[class|=invoice]{
+            vertical-align: inherit;
+            font-weight: bold;
+            text-align: -internal-center;
+        }
+    }
+
+    .lst-invoice--header div[class|=invoice]{
+        display: table-cell;
+        width: 130px;
+        padding: 20px 15px 30px;
+    }
+
+    .invoice-prod{
+        width: auto!important;
+    }
+
+    .invoice-status{
+        text-align: right;
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .lst-invoice{
+        .lst-invoice--header{
+            display: none;
+        }
+    }
+}

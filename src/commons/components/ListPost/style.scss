@@ -1,0 +1,118 @@
+@import './../../../assets/Sass/variable.scss';
+
+.post{
+    display: flex;
+    margin-bottom: 50px;
+
+    &--image{
+        width: 40%;
+        margin-right: 4%;
+
+        a{
+            display: block;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+
+    &--text{
+        width: 56%;
+
+        &__title{
+            margin-bottom: 11px;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+
+        &__info{
+            color: $primary-color;
+            font-style: italic;
+            font-size: 13px;
+            line-height: 14px;
+    
+            margin-bottom: 30px;
+            font-family: 'Merriweather', serif;
+    
+            div{
+                display: inline-block;
+            }
+    
+            a:hover{
+                color: #333;
+            }
+    
+            &--author::after,
+            &--categories::after{
+                content: '/';
+                margin: 0 7px;
+            }
+        }
+    }
+}
+
+.post.intro-post{
+    display: block;
+
+    .post--image{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .post--text{
+        width: 100%;
+        .number{
+            color: $primary-color;
+            font-family: Merriweather,serif;
+            font-style: italic;
+            margin-right: 15px;
+
+            display: inline-block;
+            font-size: 60px;
+            letter-spacing: -3px;
+            font-weight: 400;
+        }
+
+        &__info{    
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 768px){
+    .post{
+        display: block;
+
+        &--image{
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &--text{
+            width: 100%;
+
+            &__title{
+                margin-top: 0px;
+                
+            }
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .services-post{
+        display: block;
+    }
+}

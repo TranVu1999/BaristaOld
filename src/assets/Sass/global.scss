@@ -1,0 +1,228 @@
+// Page
+.page{
+    background-color: #fff;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.cf-bg{
+    background-color: #eae7de;
+}
+
+.black-bg{
+    background-color: #000;
+}
+
+// Cf Title
+.title-box{
+    text-align: center;
+    margin-bottom: 60px;
+    p{
+        font-family: 'Merriweather',serif;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 27px;
+
+        color: $primary-color;
+    }
+
+    h2{
+        font-size: 35px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        color: $main-color;
+        text-transform: uppercase;
+
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::after{
+            content: '';
+            display: block;
+            height: 2px;
+            width: 120px;
+            background-color: $primary-color;
+
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    h2.none-under{
+        &::after{
+            display: none;
+        }
+    }
+}
+
+// Display
+
+.d-table{
+    display: table;
+}
+
+.d-table-row{
+    display: table-row;
+}
+
+.d-table-cell{
+    display: table-cell;
+}
+
+.d-flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.d-gr-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.d-gr-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.d-gr-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+// Padding
+.py-0{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.px-25{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pr-15{
+    padding-right: 15px;
+}
+
+.pl-15{
+    padding-left: 15px;
+}
+
+
+
+// Highlight text
+.highlight{
+    color: $primary-color!important;
+}
+
+// Align Text
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+// Notify
+.notify.warning{
+    color: #dc3545;
+    margin: 0;
+}
+
+
+// Wrap
+.cf-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px){
+    .cf-container{
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .cf-container{
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .cf-container{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cf-container{
+        width: 600px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cf-container{
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cf-container{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .cf-container{
+        width: 95%;
+    }
+}
+
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+// Margin
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}

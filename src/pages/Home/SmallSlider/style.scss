@@ -1,0 +1,110 @@
+.small-slider{
+    &--left{
+        background-image: url(https://res.cloudinary.com/doem0ysxl/image/upload/v1611851620/BaristaCoffee/backgrounds/slider-bg_ls8twe.jpg);
+        background-position: 100% 100%;
+        min-height: 372px;
+        padding: 70px 45px;
+        width: 50%;
+
+        .small-slider--text{
+            width: 70%;
+            color: #fff;
+
+            h2{
+                color: #fff;
+            }
+
+            a{
+                color: #fff!important;
+            }
+        }
+    }
+
+    &--right{
+        flex: 1;
+
+        .small-carousel{
+            position: relative;
+            height: 355px;
+            overflow: hidden;
+
+            .item{
+                transition: all .6s cubic-bezier(.21,-0.01,.48,.46);
+            }
+
+            .item__content{
+                height: 355px;
+            }
+        }
+
+        .small-carousel__dots{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            button{
+                display: block;
+                background-color: #fff;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+    
+                margin: 8px 0;
+    
+                &.active{
+                    height: 16px;
+                    width: 16px;
+                    box-shadow: 0 0 10px #fff;
+                }
+            }
+        }
+    }
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .small-slider{
+        .cf-container{
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .small-slider__content{
+        display: block;
+    }
+
+    .small-slider--left{
+        width: 100%;
+        padding: 30px 20px;
+
+        .small-slider--text{
+            width: 100%;
+
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .small-slider--right {
+        .small-carousel__dots{
+            top: 90%;
+            right: 0;
+            left: 0;
+            flex-direction: row;
+            justify-content: center;
+
+            button{
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+}

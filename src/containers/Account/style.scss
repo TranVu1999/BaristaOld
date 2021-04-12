@@ -1,0 +1,39 @@
+.account__container{
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.account__title{
+    line-height: 50px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+}
+
+.account__content{
+    margin-top: 0px;
+}
+
+// ========================================================
+// RESPONSIVE
+// ========================================================
+@media screen and (max-width: 320px){
+    .account-page{
+        &.cf-container{
+            width: 100%;
+            padding: 0;
+        }
+
+        .account__container{
+            display: none;
+            padding-left: 0;
+        }
+
+        .account__title{
+            padding-left: 15px;
+        }
+    }
+}

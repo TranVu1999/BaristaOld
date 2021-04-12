@@ -1,0 +1,1 @@
+export const UPDATE_URL = "GLOBAL/UPDATE_URL";
